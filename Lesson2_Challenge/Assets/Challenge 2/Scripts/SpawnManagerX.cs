@@ -10,13 +10,17 @@ using UnityEngine;
 
 public class SpawnManagerX : MonoBehaviour
 {
+    //Variable para asignar el objeto que servirá como pelota
     public GameObject[] ballPrefabs;
-
+    //Variable que establece el límite del lado izquierdo
     private float spawnLimitXLeft = -22;
+    //Variable que establece el límite del lado derecho
     private float spawnLimitXRight = 7;
+    //Variable que establece el lanzamiento en la posición del eje Y.
     private float spawnPosY = 30;
-
+    //Variable con el tiempo de espera
     private float startDelay = 1.0f;
+    //Variable que establece el intervalo permitido para realizar el lanzamiento
     private float spawnInterval = 4.0f;
 
     // Start is called before the first frame update
@@ -31,10 +35,10 @@ public class SpawnManagerX : MonoBehaviour
     {
         //Se crea una variable que definira el color de las pelotas.
         int ball = Random.Range(0, 3);
-        // Generate random ball index and random spawn position
+        // Generate una pelota aleatoria para el jugador
         Vector3 spawnPos = new Vector3(Random.Range(spawnLimitXLeft, spawnLimitXRight), spawnPosY, 0);
 
-        // instantiate ball at random spawn location
+        // Genera una nueva instancia de la pelota
         // Se sustituye el 0 con la variable ball.
         Instantiate(ballPrefabs[ball], spawnPos, ballPrefabs[ball].transform.rotation);
 

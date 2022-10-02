@@ -9,11 +9,13 @@ using UnityEngine;
 
 public class MoveForwardX : MonoBehaviour
 {
+    //Variable para determinar la velocidad
     public float speed;
 
     // Update is called once per frame
     void Update()
     {
+        //Produce el movimiento hacia adelante
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }

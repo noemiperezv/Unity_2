@@ -9,9 +9,10 @@ using UnityEngine;
 
 public class DetectCollisionsX : MonoBehaviour
 {
-
+    //Función que se ejecuta al detectar el choque entre dos objetos
     private void OnTriggerEnter(Collider other)
     {
+        //Destruye el objeto
         Destroy(gameObject);
     }
 }

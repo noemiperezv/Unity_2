@@ -17,14 +17,16 @@ public class DestroyOutOfBoundsX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Se destruyen los perros cuando llegan al límite.
+        // Valida que el objeto(de tipo perro) atraviese el límite del área de juego
         if (transform.position.x < leftLimit)
         {
+            //Elimina el objeto
             Destroy(gameObject);
-        } 
-        // Se destruyen las pelotas cuando llegan al límite.
+        }
+        // Valida que el objeto(de tipo perro) atraviese la superficie del área de juego
         else if (transform.position.y < bottomLimit)
         {
+            //Elimina el objeto
             Destroy(gameObject);
         }
 
