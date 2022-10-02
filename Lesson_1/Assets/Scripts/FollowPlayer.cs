@@ -1,3 +1,8 @@
+/*
+ * Autor: Noemi Perez Vega
+ * Fecha: 29/09/2022
+ * Descripción: Archivo para controlar la posición y movimiento de la cámara respecto al jugador.
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
