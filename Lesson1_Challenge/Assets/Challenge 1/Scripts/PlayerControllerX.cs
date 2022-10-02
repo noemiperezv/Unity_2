@@ -9,8 +9,11 @@ using UnityEngine;
 
 public class PlayerControllerX : MonoBehaviour
 {
+    //Variable que determina la velocidad de avance
     public float speed;
+    //Variable que determina la velocidad con la que gira el objeto
     public float rotationSpeed;
+    //Variable para obtener los movimientos verticales
     public float verticalInput;
 
     // Start is called before the first frame update
